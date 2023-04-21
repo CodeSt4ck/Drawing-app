@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawing App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Drawing-Style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="toolbar-menu">
+        <!-- <i class="fa-solid fa-square-plus"></i>
+        <i class="fa-solid fa-square-minus"></i> -->
+        <i class="fa-solid fa-file-arrow-down" id="save"></i>
+        <i class="fa-solid fa-trash" id="delete"></i>
+        <hr />
+        <i class="fa-solid fa-hand active" id="move"></i>
+        <i class="fa-solid fa-arrow-pointer" id="pointer"></i>
+        <i class="fa-solid fa-palette" id="color_picker">
+          <div class="color">
+            <input type="color" id="color" />
+          </div>
+        </i>
+        <i class="fa-solid fa-pencil" id="pencil">
+          <div class="pencil-size">
+            <input type="range" min="1" max="30" value="3" id="pencil_size" />
+          </div>
+        </i>
+        <i class="fa-solid fa-eraser" id="eraser">
+          <div class="eraser-size">
+            <input type="range" min="1" max="30" value="3" id="eraser_size" />
+          </div>
+        </i>
+        <i class="fa-solid fa-font" id="textbox"></i>
+        <i class="fa-solid fa-shapes" id="shapes_picker">
+          <div class="shapes">
+            <img src="Images/rectangle.svg" alt="" srcset="" id="rectangle" />
+            <img src="Images/circle.svg" alt="" srcset="" id="circle" />
+            <img src="Images/triangle.svg" alt="" srcset="" id="triangle" />
+          </div>
+        </i>
+        <i class="fa-solid fa-image" id="image"></i>
+        <i class="fa-solid fa-note-sticky" id="note"></i>
+        <hr />
+        <i class="fa-solid fa-rotate-left" id="undo"></i>
+        <i class="fa-solid fa-rotate-right" id="redo"></i>
+      </div>
+      <canvas class="canvas">Drawing canvas</canvas>
+    </div>
+  </body>
+  <script src="Drawing-Script.js"></script>
+</html>
